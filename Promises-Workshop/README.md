@@ -1,0 +1,1 @@
+This workshop is available [here](https://github.com/stevekane/promise-it-wont-hurt).

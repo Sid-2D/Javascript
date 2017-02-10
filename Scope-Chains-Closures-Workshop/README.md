@@ -1,0 +1,1 @@
+This workshop is available [here](https://www.github.com/jesstelford/scope-chains-closures).
