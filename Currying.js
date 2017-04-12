@@ -25,3 +25,7 @@ var callMultiply = function() {
 }
 
 callMultiply(2)(3);
+
+var compose = (f, g) => x => f(g(x));
+var snakeCase = compose(replace(/\s+/ig, '_'), toLowerCase);
+snakeCase('hello');
