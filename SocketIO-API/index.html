@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chat Rooms</title>
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+		<script type="text/javascript">
+			var socket = io()
+			//------------------
+			// Custom events
+			// socket.on('jsonEvent', data => {
+			// 	document.write(data.message)
+			// })
+			// socket.emit('clientJson', { message: 'Custom client event' })
+			//------------------
+			//------------------
+			// Broadcasting
+			// socket.on('newclientconnect', data => {
+			// 	document.body.innerHTML = ''
+			// 	document.write(data.message)
+			// })
+			//------------------
+			//------------------
+			// Namespaces
+			// socket.on('nsEvent', data => {
+			// 	document.body.innerHTML = data
+			// })
+			//------------------
+			socket.on('connectToRoom', data => {
+				document.body.innerHTML = data
+			})
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
